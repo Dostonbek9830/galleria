@@ -1,0 +1,116 @@
+/* libre-baskerville-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/libre-baskerville-v14-latin-regular.woff2") format("woff2"), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url("./fonts/libre-baskerville-v14-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* libre-baskerville-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./fonts/libre-baskerville-v14-latin-700.woff2") format("woff2"), /* Chrome 36+, Opera 23+, Firefox 39+ */
+    url("./fonts/libre-baskerville-v14-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Libre Baskerville", "Arial" , sans-serif ;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.header-slideshow {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 2.57143px;
+    color: #7D7D7D;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hero-section {
+    padding-top: 40px;
+}
+
+.grid-wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+}
+
+.flex-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.flex-item {
+    width: 310px;
+}
+
+.text {
+    width: 310px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px 32px 33px;
+
+}
+
+.subheading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.author {
+    margin: 0px;
+    padding-top: 7px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+}
+
+.flex-item:nth-child(1) {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/starry_night.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.flex-item:nth-child(2) {
+    height: 400px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/thes_storm.png);
+    
+}
+
