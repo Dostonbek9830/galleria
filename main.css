@@ -54,36 +54,10 @@ body {
 
 .hero-section {
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-.grid-wrapper {
-    display: flex;
-    justify-content: space-between;
-    column-gap: 40px;
-}
-
-.flex-wrapper-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    row-gap: 40px;
-}
-
-.flex-item {
-    width: 310px;
-}
-
-.text {
-    width: 310px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 30px 32px 33px;
-
-}
-
-.subheading {
+.name-of-pic {
     margin: 0;
     font-weight: 700;
     font-size: 24px;
@@ -91,26 +65,176 @@ body {
     color: #fff;
 }
 
-.author {
-    margin: 0px;
+.author-of-pic {
+    margin: 0;
     padding-top: 7px;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #fff;
     mix-blend-mode: normal;
-    opacity: 0.75;
+    opacity: .75;
 }
 
-.flex-item:nth-child(1) {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/starry_night.png);
-    background-position: bottom;
+.grid-wrapper {
+    display: grid;
+    grid-template: repeat(7, 200px)/repeat(4, 310px);
+    gap: 40px;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 33px 33px 33px 32px;
+    background-color: #0ff;
+}
+
+.grid-item:nth-child(1) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/starry_night.png);
+}
+
+.grid-item:nth-child(2) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/girl_with_pearl.png);
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
-.flex-item:nth-child(2) {
-    height: 400px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/thes_storm.png);
-    
+.grid-item:nth-child(3) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/guernica.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.grid-item:nth-child(4) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/penitent.png);
+    grid-column: 4/4;
+    grid-row: 1/3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.grid-item:nth-child(5) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/thes_storm.png);
+    grid-row: 2/4;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.grid-item:nth-child(6) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-great-wave-off.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/2;
+}
+
+.grid-item:nth-child(7) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/van_goh.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/3;
+    grid-row: 2/5;
+}
+
+.grid-item:nth-child(8) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-sleeping-gypsy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+
+.grid-item:nth-child(9) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/lady-with-and-ermin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 4/7;
+
+}
+
+.grid-item:nth-child(10) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/nigt-cafe.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/2;
+    grid-row: 4/6;
+
+}
+
+.grid-item:nth-child(11) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/mona_lisa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/4;
+    grid-row: 5/7;
+
+}
+
+.grid-item:nth-child(12) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-basket-of-apples.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.grid-item:nth-child(13) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-boy-in-red.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-row: 7/7;
+
+}
+
+.grid-item:nth-child(14) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/arnolofini-portrait.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 2/2;
+    grid-row: 6/8;
+
+}
+
+.grid-item:nth-child(15) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-sleeping-gypsy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 3/3;
+}
+
+.grid-item:nth-child(16) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.841672) 100%), url(./images/the-swing.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 4/4;
+    grid-row: 5/8;
+}
+
+
+
+
+
+
+
+
+
 
